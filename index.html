@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+</head>
+
+<body>
+  <div id="counter">0</div>
+  
+  <script>
+    // The basic check
+    if(document.readyState === 'complete') {
+        document.getElementByid("counter").innerHTML = document.getElementByid("counter").innerHTML + 1
+    }
+
+    // Polling for the sake of my intern tests
+    /*
+    var interval = setInterval(function() {
+        if(document.readyState === 'complete') {
+            clearInterval(interval);
+            done();
+        }    
+    }, 100);
+    */
+  </script>
+</body>
+</html>
